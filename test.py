@@ -10,4 +10,8 @@ for i in range(len(a)):
                         tam=a[i]
                         a[i]=a[j]
                         a[j]=tam
-print(a+1)
+print(a)
+
+text= " abc def"
+text="ffff"+text+"bbbb"
+print(text)

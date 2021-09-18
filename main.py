@@ -1,3 +1,4 @@
+#Predicting Missing Words in a sentence
 import torch
 from pytorch_pretrained_bert import BertTokenizer, BertModel, BertForMaskedLM
 
@@ -10,6 +11,9 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 #text = '[CLS] The Moon\'s orbit around [MASK] has a sidereal period of 27.3 days. [SEP]' NLP
 #text="[CLS] A medium [MASK] provides almost 9% of a person’s daily potassium according to the nutritional information from the above sources.[SEP]"
+text="In the automotive [MASK] , its success was dominating, and quickly spread worldwide seeing the founding of Ford France and Ford Britain in 1911, Ford Denmark 1923, Ford Germany 1925; in 1921, Citroën was the first native European manufacturer to adopt the production method. Soon, companies had to have assembly lines, or risk going broke; by 1930, 250 companies which did not, had disappeared"
+text="[CLS] " +text +" [SEP]"
+print (text)
 tokenized_text = tokenizer.tokenize(text)
 #print (tokenized_text)
 indexed_tokens = tokenizer.convert_tokens_to_ids(tokenized_text)
