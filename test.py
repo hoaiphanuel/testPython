@@ -17,3 +17,12 @@ text="ffff"+text+"bbbb"
 print(text)
 a.sort()
 print (a)
+
+def sapxep(a):
+    for i in range(len(a)):
+        for j in range(len(a)):
+                if (a[i]<a[j]):
+                        tam=a[i]
+                        a[i]=a[j]
+                        a[j]=tam
+    return (a)
