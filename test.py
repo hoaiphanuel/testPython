@@ -15,3 +15,5 @@ print(a)
 text= " abc def"
 text="ffff"+text+"bbbb"
 print(text)
+a.sort()
+print (a)
