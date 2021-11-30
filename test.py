@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 #h100 dau * tren 1 hàng
 #print("*"*100)
@@ -22,10 +21,4 @@ def sapxep(a):
     return (a)
 def timkiem(a):
         return (a)
-=======
 
-
-#print("*"*100)
-
-print((("*"*10)+"\n")*(2*5))
->>>>>>> Initial commit
