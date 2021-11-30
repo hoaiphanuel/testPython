@@ -24,3 +24,6 @@ def sapxep(a):
 def timkiem(a):
         return (a)
 
+
+def hamtimuscln(a,b):
+    return (a)
