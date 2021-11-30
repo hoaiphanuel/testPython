@@ -27,7 +27,7 @@ model = LinearModel()
 """Define weight and bias for the model"""
 
 # Define the weight and bias
-weight = 20
+weight = 2
 bias = 1.0
 
 """Prepare Training Data"""
@@ -38,13 +38,11 @@ inputs  = tf.random.normal(shape=[data])
 noise   = tf.random.normal(shape=[data])
 outputs = inputs * weight + bias + noise
 """
-inputs =np.arange(-1,1,0.01)
+inputs =np.arange(-3,3,0.01)
 data = inputs.shape
 outputs=inputs*weight+bias
-outputs[5]=0.5
-outputs[0]=.33
-outputs[10]=0.33
-outputs[15]=0.6
+outputs=outputs+np.random.uniform(-0.3,0.3,inputs.shape)
+#y=20x+1
 
 """Check Generated data:
 
@@ -80,10 +78,11 @@ def plot(epoch):
 
 Ws, bs = [], []
 
-epochs = range(100)
+epochs = range(50)
 
 # Define a training loop
 learning_rate = 0.1
+
 for epoch in epochs:
     with tf.GradientTape() as tape:
         loss = compute_loss(outputs, model(inputs))
@@ -109,3 +108,5 @@ plt.plot([weight] * len(epochs), 'r--',
          [bias] * len(epochs), 'b--')
 plt.legend(['W', 'b', 'true W', 'true_b'])
 plt.show()
+x = 4
+print (Ws[48]*x+bs[48])
