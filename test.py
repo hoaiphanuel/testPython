@@ -26,3 +26,5 @@ def sapxep(a):
                         a[i]=a[j]
                         a[j]=tam
     return (a)
+def timkiem(a):
+        return (a)
