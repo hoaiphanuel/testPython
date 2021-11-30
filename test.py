@@ -12,7 +12,6 @@ for i in range(len(a)):
                         a[j]=tam
 print(a)
 
-
 def sapxep(a):
     for i in range(len(a)):
         for j in range(len(a)):
