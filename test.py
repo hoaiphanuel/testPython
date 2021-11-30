@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #h100 dau * tren 1 hàng
 #print("*"*100)
@@ -11,8 +12,6 @@ for i in range(len(a)):
                         a[i]=a[j]
                         a[j]=tam
 print(a)
-
-
 def sapxep(a):
     for i in range(len(a)):
         for j in range(len(a)):
@@ -23,3 +22,10 @@ def sapxep(a):
     return (a)
 def timkiem(a):
         return (a)
+=======
+
+
+#print("*"*100)
+
+print((("*"*10)+"\n")*(2*5))
+>>>>>>> Initial commit
