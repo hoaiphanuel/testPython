@@ -23,4 +23,4 @@ def sapxep(a):
     return (a)
 def timkiem(a):
         return (a)
-print("chao các bạn toi vua cap nhap ban mới")
+
